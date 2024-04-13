@@ -18,5 +18,11 @@
     <ClCompile Include="sourse.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="class01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="book.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
