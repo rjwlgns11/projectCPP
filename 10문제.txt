@@ -1,0 +1,573 @@
+C++ 연습문제
+
+1 C++ 표준 main함수의 타입은 int 이다  x 
+(기왕이면 int형으로)
+2. main함수는 프로그램이 실행되는 영역이다 o 
+3. maim함수의 마지막에는 반드시  return 문이 작성되어야 한다 x 
+(근데 정상적으로 종료 시키려면 return문이 있는게 맞다) 
+4.main 함수는 void 타입으로 설계해도 프로그램 실행에는 영향이 없다. o
+(기왕이면 int형으로)
+
+2번문제 
+기본 자료형이 아닌 것을 고르시오
+1.int o(정수형)
+2.char o(문자형)
+3.bool o(논리형)
+4.string x (얘는 엄연히 기본 자료형이 아니다!!)
+
+3번 문제
+c++표준에서 입출력을 위한 클래스,함수 개체들이 포함된것을 의미하는게 무엇인지 고르시오
+
+1. std; // standard
+2. namespace // 이름을 모아놓는 공간
+3. iostream //표준 입출력 스트림 o
+4. cin //얘는 iostream없으면 실행조차 못함
+
+4번 문제
+클래스의 개체에 대한 설명으로 적절하지 않은것은?
+
+1.클래스는 개체를 생성하기 위해 만들어주는 틀의 역할을 한다. o 
+2. 클래스는 대개 필드와 매소드로 이루어져 있다. o
+3 클래스의 필드는 private보다 public으로써의 설계가 바람직하다.x
+(private는 정보은닉 혹은 다른곳에서 임의로 접근하지 못하게 하는 용도)
+4.클래스를 통해 만들어진것은 개채 혹은 인스턴스라고 부른다. o
+
+5번 문제
+생성자에 대한 설명으로 옳은것을 고르시오
+
+1. 생성자의 이름은 클래스의 이름과 동일합니다 o
+2. 생생자는 형태 에따라 return값을 작성해야 한다 x (void도 아니다)
+3. 생성자를 만들지 않았을 경우 생성을 진행할수없다. o
+4. 생성자는 클래스당 하나만 존재할 수 있다. x (오버로딩)
+
+
+6번문제
+다음과 같은 조건의 클래스르 구현하기
+x좌표와 y좌표에 대한 정보를 넣는다
+정보에따라 사분면이 결정된다.
+=============================================
+#include <iostream>
+using namespace std;
+class quadrant
+{
+private:
+	int x, y;
+public:
+	quadrant(int x, int y);
+	void quadrantInfo();
+
+};
+int main()
+{
+	int a, b;
+	cout << "사분면의 좌표를 입력" << endl;
+	cin >> a >> b;
+	quadrant q1(a,b);
+	q1.quadrantInfo();
+
+
+
+	return 0;
+}
+
+quadrant::quadrant(int x, int y)
+{
+	this->x = x;
+	this->y = y;
+
+}
+
+void quadrant::quadrantInfo()
+{
+	if (x > 0 && y > 0)
+	{
+		cout << "제 1 사분면 위치" << endl;
+	}
+	else if (x < 0 && y > 0)
+	{
+		cout << "제 2사분면 위치" << endl;
+
+	}
+	else if (x > 0 && y < 0)
+	{
+		cout << "제 3사분면 위치" << endl;
+
+	}
+	else if (x < 0 && y < 0)
+	{
+		cout << "제 4사분면 위치" << endl;
+
+	}
+	else
+	{
+		cout << "0" << endl;
+	}
+		
+}
+
+=========================================================
+7번 문제
+다음 표와 동일한 결과를 가지는 2차원 배열을 출력하기
+
+#include <iostream>//얘없이는 단순한 입출력조차 불가능하다.
+using namespace std;//std를 생략하기 위한 절차
+
+//5마다 방향전환 필요
+int main()
+{
+	int arr[5][5]{ 0 };
+	int value = 1;
+
+	for (int i = 0; i < 5; i++)
+	{
+		if (i % 2 == 0)
+		{
+			for (int a = 0; a < 5; a++)
+			{
+				arr[i][a] = value++;
+			}
+		}
+		else
+		{
+			for(int a = 4; a >= 0; a--)
+			{
+				arr[i][a] = value++;
+			}
+		}
+		
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		for (int a = 0; a < 5; a++)
+		{
+			cout << arr[i][a]<<" ";
+		}
+		cout << endl;
+	}
+
+
+	return 0;
+}
+==================================================================
+
+
+8번 문제 
+은행계좌 프로그램을 구현하기
+
+클래스 이름 Account
+클래스 속성 : 사용자 이름, 계좌번호, 잔액
+클래스의 동작 : 계좌 조회 , 계좌 입금 , 계좌 출금
+
+#include <iostream>
+using namespace std;
+class Account
+{
+private:
+	string name;
+	string accountnumber;
+	int money;
+public:
+	Account(string name, string acountnumber, int money);
+	void Accountcheck();
+	void Accountdeposit(int a);
+	void AccountWithdraw(int a);
+};
+
+int main()
+{
+	int select;
+	Account A1("허지훈", "427-098744-01-011", 30000);
+	int money;
+	while (true) 
+	{
+		cout << "기능을 선택하세요" << endl;
+		cout << "1. 계좌 조회" << " 2. 입금" << " 3. 출금" << " 4. 종료" << endl;
+		cin >> select;
+		switch (select)
+		{
+		case 1: 
+			A1.Accountcheck();
+			break;
+		case 2:
+			cout << "입금할 금액을 입력하세요" << endl;
+			cin >> money;
+			A1.Accountdeposit(money);
+			break;
+		case 3:
+			cout << "출금할 금액을 입력하세요" << endl;
+			cin >> money;
+			A1.AccountWithdraw(money);
+			break;
+		case 4:
+			exit(0);
+		}
+
+		
+	}
+	
+	
+	return 0;
+}
+
+Account::Account(string name, string accountnumber, int money)
+{
+	this->name=name;
+	this->accountnumber = accountnumber;
+	this->money = money;
+}
+
+void Account::Accountcheck()
+{
+	cout << "계좌주 이름 : " << name << " 계좌번호 : " << accountnumber << endl;
+	cout << "현재 계좌의 잔액은 " << money << "원 입니다" << endl;
+	cout << endl;
+}
+
+void Account::Accountdeposit(int a)
+{
+	money = money + a;
+}
+
+void Account::AccountWithdraw(int a)
+{
+	if (money < 0 || money - a <= 0)
+	{
+		cout << "잔액이 부족하여 출금을 진행할수 없습니다." << endl;
+	}
+	else
+	{
+		money = money - a;
+	}
+	
+}
+
+=============================================================
+
+9번문제 커피자판기를 구현하기
+자유형!
+
+5가지의 커피를 구현할거임
+5개의 브랜드
+
+
+
+#include <iostream>
+using namespace std;
+
+#define MAXIM 0
+#define KANU 0
+#define NESPRESSO 500
+#define STARBUCKS 1000
+#define TWOSOMEPLACE 500
+#define SIZEUP 1000
+#define AMERICANO 4000
+#define CAFFELATTE 5500
+#define CAREMELMACCHIATO 6500
+#define CAPPUCCINO 6000
+#define FRAPPUCCINO 7000
+
+class CoffeeMachine
+{
+private:
+	string menuA;
+	string menuB;
+	string menuC;
+	string menuD;
+	string menuE;
+	int price;
+	//string selectlist[];
+public:
+	CoffeeMachine(string menuA, string menuB, string menuC, string menuD, string menuE, int price/*string selectlist[]*/);
+	CoffeeMachine();
+	void MenuList();
+	int selectmenu(int select);
+	int payment(int money);
+	
+};
+
+class CoffeeBrand : public CoffeeMachine
+{
+protected:
+	string BrandList1;
+	string BrandList2;
+	string BrandList3;
+	string BrandList4;
+	string BrandList5;
+public:
+	CoffeeBrand(string BrandList1,string BrandList2,string BrandList3,string BrandList4,string BrandList5);
+	CoffeeBrand();
+	void BrandList();
+	int BrandChoice(int brandselect);
+	
+	
+};
+
+
+
+
+
+int main()
+{
+	
+	CoffeeBrand* machine = new CoffeeBrand;
+	
+	int selectmenu;
+	
+	
+
+	cout << "어서오세요. AI 커피머신입니다" << endl;
+	while (true) 
+	{
+		int totalmoney = 0;
+		cout << "메뉴를 선택해주세요." << endl;
+		cout << "1.전체 메뉴 확인 2. 브랜드 확인 3.브랜드 선택하기, 4.커피 종류 선택하기, 5.결제하기, 6.종료하기" << endl;
+		cin >> selectmenu;
+		switch (selectmenu)
+		{
+		case 1:
+			machine->MenuList();
+			break;
+		case 2:
+			machine->BrandList();
+			break;
+		case 3:
+			
+			cout << "커피 브랜드를 선택하세요. 브랜드 다시 확인 6번" << endl;
+			cin >> selectmenu;
+			totalmoney+=machine->BrandChoice(selectmenu);
+			break;
+
+		case 4:
+			cout << "커피 메뉴를 선택하세요. 메뉴 다시 확인 6번" << endl;
+			cin >> selectmenu;
+			totalmoney+=machine->selectmenu(selectmenu);
+			break;
+		case 5:
+			
+			totalmoney = machine->payment(totalmoney);
+			
+			break;
+		case 6:
+			cout << "안녕히가세요."<<endl;
+			exit(0);
+		}
+		
+
+
+	}
+
+
+
+
+	delete machine;
+
+
+
+	return 0;
+}
+
+//커피 메뉴 리스트
+CoffeeMachine::CoffeeMachine(string menuA, string menuB, string menuC, string menuD, string menuE,int price /*string selectlist[]*/)
+{
+	this->menuA = menuA;
+	this->menuB = menuB;
+	this->menuC = menuC;
+	this->menuD = menuD;
+	this->menuE = menuE;
+	this->price = price;
+	/*this->selectlist[20] = selectlist[20];*/
+}
+CoffeeMachine::CoffeeMachine()
+{
+	menuA = "아메리카노";
+	menuB = "카페라떼";
+	menuC = "카라멜 마끼아또";
+	menuD = "카푸치노";
+	menuE = "프라푸치노";
+
+
+}
+void CoffeeMachine::MenuList()
+{
+	cout << menuA << endl;
+	cout << menuB << endl;
+	cout << menuC << endl;
+	cout << menuD << endl;
+	cout << menuE << endl;
+}
+
+
+int CoffeeMachine::selectmenu(int select)
+{
+	
+	
+		switch (select)
+		{
+
+		case 1:
+			cout << menuA << "를 선택하셨습니다." << endl;
+			return AMERICANO;
+
+		case 2:
+			cout << menuB << "를 선택하셨습니다." << endl;
+			return CAFFELATTE;
+		case 3:
+			cout << menuC << "를 선택하셨습니다." << endl;
+			return CAREMELMACCHIATO;
+		case 4:
+			cout << menuD << "를 선택하셨습니다." << endl;
+			return CAPPUCCINO;
+		case 5:
+			cout << menuE << "를 선택하셨습니다." << endl;
+			return FRAPPUCCINO;
+		case 6:
+			MenuList();
+			cout << "메인 메뉴로 돌아갑니다" << endl;
+			cout << endl;
+			return 0;
+
+		default:
+			cout << "다시 선택해주세요." << endl;
+			return 0;
+		}
+	
+}//커피 메뉴 고르기   
+
+
+
+int CoffeeMachine::payment(int totalmoney)
+{
+	int credit;
+	
+	cout << "결제금액 : " << totalmoney << endl;
+	cout << "결제금액을 넣어주세요." << endl;
+	cin >> credit;
+	if (credit >= totalmoney)
+	{
+		cout << credit << "원을 받았습니다"<<endl;
+		cout << "잔돈은 " << credit - totalmoney << "원 입니다." << endl;
+		return credit - totalmoney;
+	}
+	else
+	{
+		cout <<  "잔액이 부족합니다." << endl;
+		return 0;
+	}
+}
+
+int CoffeeBrand::BrandChoice(int brandselect)
+{
+	
+	
+		switch (brandselect)
+		{
+		case 1:
+			cout << "맥심을 선택하셨습니다." << endl;
+			return MAXIM;
+		case 2:
+			cout << "카누를 선택하셨습니다." << endl;
+			return KANU;
+		case 3:
+			cout << "네스프레소를 선택하셨습니다. +1000" << endl;
+			return NESPRESSO;
+		case 4:
+			cout << "스타벅스를 선택하셨습니다. +1000" << endl;
+			return STARBUCKS;
+		case 5:
+			cout << "투썸플레이스를 선택하셨습니다. +1000" << endl;
+			return TWOSOMEPLACE;
+		case 6:
+			BrandList();
+			cout << "메인 메뉴로 돌아갑니다" << endl;
+			cout << endl;
+			return 0;
+		default:
+			cout << "메인 메뉴로 돌아갑니다" << endl;
+			cout << endl;
+			return 0;
+		}
+	
+}
+
+CoffeeBrand::CoffeeBrand(string BrandList1, string BrandList2, string BrandList3, string BrandList4, string BrandList5)
+{
+	this->BrandList1 = BrandList1;
+	this->BrandList2 = BrandList2;
+	this->BrandList3 = BrandList3;
+	this->BrandList4 = BrandList4;
+	this->BrandList5 = BrandList5;
+}
+
+CoffeeBrand::CoffeeBrand()
+{
+	BrandList1 = "맥심";
+	BrandList2 = "카누";
+	BrandList3 = "네스프레소";
+	BrandList4 = "스타벅스";
+	BrandList5 = "투썸플레이스";
+		
+}
+
+void CoffeeBrand::BrandList()
+{
+	cout << BrandList1 << endl;
+	cout << BrandList2 << endl;
+	cout << BrandList3 << endl;
+	cout << BrandList4 << endl;
+	cout << BrandList5 << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================
+
+10번 문제 피라미드 쌓기
+
+우선 공백을 출력한다.
+마지막에 1만큼 *을 출력한다
+공백을 한칸 줄인다.
+num x 2만큼 *을 출력한다 
+반복
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int num=0;
+	for (int i = 0; i < 4; i++)
+	{
+		num++;
+		for (int j = 3; j > i; j--)
+			cout << " ";
+		for (int j = 0; j < num; j++)
+			cout << "*" ;
+		num++;
+		cout << endl;
+	}
+
+	
+	return 0;
+
+}

@@ -1,57 +1,62 @@
-//#include <iostream>
-//using namespace std;
-//
-//class Book
-//{
-//	string name;
-//	int checkpoint;
-//	int page;
-//public:
-//	
-//	Book operator+(int value)
-//	{
-//		if (checkpoint + value>page)
-//		{
-//			cout << "총 페이지수를 초과할수 없습니다!" << endl;
-//			return *this;//자기 자신을 반환한다
-//		}
-//		 
-//		checkpoint += value;
-//		
-//		return *this;
-//			
-//		
-//	}
-//	Book(string name):name(name)
-//	{
-//		checkpoint = 0;
-//		page = 500;
-//
-//	}
-//	void info()
-//	{
-//		cout << "현재 읽은 페이지 수 : " << checkpoint << endl;
-//	}
-//};
-//
-//int main()
-//{
-//	Book book("A");
-//	int pagecheckpoint;
-//	while (true)
-//	{
-//		cout << "읽은 페이지수를 입력하세요";
-//		cin >> pagecheckpoint;
-//
-//		
-//		book = book + pagecheckpoint;
-//		book.info();
-//	}
-//
-//	
-//	
-//	return 0;
-//
-//}
-//
-//
+#include <iostream>
+using namespace std;
+class quadrant
+{
+private:
+	int x, y;
+public:
+	quadrant(int x, int y);
+	void quadrantInfo();
+
+};
+int main()
+{
+	int a, b;
+	int x, y;
+	cout << "x축을 입력" << endl;
+	cin >> a >> b;
+	cout << "y축을 입력" << endl;
+
+	cin >> x >> y;
+	quadrant q1(a+b,x+y);
+	q1.quadrantInfo();
+
+
+
+	return 0;
+}
+
+quadrant::quadrant(int x, int y)
+{
+	this->x = x;
+	this->y = y;
+
+}
+
+void quadrant::quadrantInfo()
+{
+	if (x > 0 && y > 0)
+	{
+		cout << "제 1 사분면 위치" << endl;
+	}
+	else if (x < 0 && y > 0)
+	{
+		cout << "제 2사분면 위치" << endl;
+
+	}
+	else if (x > 0 && y < 0)
+	{
+		cout << "제 3사분면 위치" << endl;
+
+	}
+	else if (x < 0 && y < 0)
+	{
+		cout << "제 4사분면 위치" << endl;
+
+	}
+	else
+	{
+		cout << "0" << endl;
+	}
+
+}
