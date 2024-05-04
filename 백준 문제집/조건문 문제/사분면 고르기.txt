@@ -1,0 +1,30 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int a, b;
+	printf("사분면의 x,y좌표 입력\n");
+	scanf("%d %d", &a, &b);
+
+	if (a > 0 && b > 0) {
+
+		printf("제 1 사분면에 속한 좌표\n");
+	}
+	else if (a < 0 && b > 0) {
+
+		printf("제 2 사분면에 속한 좌표\n");
+	}
+	else if (a < 0 && b < 0) {
+
+		printf("제 3 사분면에 속한 좌표\n");
+	}
+	else if (a > 0 && b < 0) {
+
+		printf("제 4 사분면에 속한 좌표\n");
+	}
+	else {
+		printf("잘못된 입력입니다 \n");
+	}
+	return 0;
+}

@@ -1,0 +1,15 @@
+
+int returnfuntion(int a)
+{
+	printf("반복의 회차 출력%d\n", a);
+	if (a>0) {
+		return returnfuntion(a - 1);
+	}
+	else
+
+	{
+		return 0;
+	}
+
+
+}

@@ -1,0 +1,85 @@
+package name;
+import java.util.Scanner;
+public class name1 {
+
+	public static void main(String[] args) {
+	
+		String name;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("정수를 입력하세요 >> ");
+		
+		name= scanner.nextLine();
+	
+		int[] arr = new int[name.length()];
+		
+		for(int i=0; i<name.length(); i++) 
+		       arr[i] = name.charAt(i) - '0';
+                                                   
+		
+		for(int i=1; i<arr.length;i++)
+		{
+			if(arr[i]!=0)
+			{
+				arr[i]=0;
+			}
+		}
+		for(int i=0; i<arr.length;i++)
+		{
+			System.out.print(arr[i]);
+		}
+		
+		scanner.close();
+	}
+
+}
+
+
+=================================
+package name;
+import java.util.Scanner;
+public class name1 {
+
+	public static void main(String[] args) {
+	
+		int time;
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("초를 입력하세요 >> ");
+		
+		time = scanner.nextInt();
+		System.out.println(time);
+		
+		System.out.println("입력한 초는 "+time+"초 입니다");
+		System.out.println(time + "초는 " + time/3600 +"시간 "+ (time /60)%60 +"분 " + time%60+"초 입니다"  );
+		
+		scanner.close();
+	}
+
+}
+
+
+============================================
+
+
+package name;
+import java.util.Scanner;
+public class name1 {
+
+	public static void main(String[] args) {
+	
+		int a,b;
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("두개의 정수를 입력 >> ");
+		
+		a= scanner.nextInt();
+		b= scanner.nextInt();
+		
+		System.out.printf("%d",a*b<<1);
+		
+		
+		scanner.close();
+	}
+
+}
+

@@ -1,0 +1,16 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int main()
+{
+	int a, b, c, d, e;
+	scanf("%1d%d1%d1%1d%d1", &a, &b, &c, &d, &e);
+	for (int z = 10000; z > 0;)
+	{
+		
+		printf("%d", a * z);
+		z = z / 10;
+	}
+	return 0;
+}

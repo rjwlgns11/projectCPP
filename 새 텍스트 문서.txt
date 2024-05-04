@@ -1,0 +1,32 @@
+두개의 정수를 입력받는다.
+
+단 int형 최대값 돌파시 오버플로우가 나지 않아야한다.
+고려해볼수 있는 수
+
+unsigned? 음수를 표현할수 없음
+long? 
+
+
+
+#include <Windows.h>
+void textColor(int color_number)
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color_number);
+}
+void Title()
+{
+	textColor(10); //녹색
+	printf("CAFE");
+	textColor(9); // 파란색 
+	printf("PROGRAM");
+	textColor(15); //흰색
+	printf("1. 물건 구매\n");
+	printf("2. 프로그램 종료\n");
+}
+
+
+
+
+
+system("title MyKiosk");
+system("mode con cols=60 lines=30")

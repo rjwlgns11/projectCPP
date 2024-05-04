@@ -60,9 +60,13 @@ public:
 int main()
 {
 	int a, b;
-	cout << "사분면의 좌표를 입력" << endl;
+	int x, y;
+	cout << "x축을 입력" << endl;
 	cin >> a >> b;
-	quadrant q1(a,b);
+	cout << "y축을 입력" << endl;
+
+	cin >> x >> y;
+	quadrant q1(a+b,x+y);
 	q1.quadrantInfo();
 
 
@@ -102,7 +106,7 @@ void quadrant::quadrantInfo()
 	{
 		cout << "0" << endl;
 	}
-		
+
 }
 
 =========================================================

@@ -1,0 +1,29 @@
+﻿  main.cpp
+C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\main.cpp(24,18): error C2676: 이항 '-': 'Player'이(가) 이 연산자를 정의하지 않거나 미리 정의된 연산자에 허용되는 형식으로의 변환을 정의하지 않습니다.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4303,30):
+  'unknown-type std::operator -(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'일 수 있습니다.
+  	C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\main.cpp(24,11):
+  	'unknown-type std::operator -(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)': 'Player'에서 'const std::move_iterator<_Iter> &'에 대한 템플릿 인수를 추론할 수 없습니다.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1785,5):
+  또는       'unknown-type std::operator -(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
+  	C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\main.cpp(24,11):
+  	'unknown-type std::operator -(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)': 'Player'에서 'const std::reverse_iterator<_BidIt> &'에 대한 템플릿 인수를 추론할 수 없습니다.
+  
+  Monster.cpp
+C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\Monster.cpp(21,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Player.cpp
+C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\Player.cpp(40,19): error C2676: 이항 '-': 'const Player'이(가) 이 연산자를 정의하지 않거나 미리 정의된 연산자에 허용되는 형식으로의 변환을 정의하지 않습니다.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4303,30):
+  'unknown-type std::operator -(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'일 수 있습니다.
+  	C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\Player.cpp(40,16):
+  	'unknown-type std::operator -(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)': 'const Player'에서 'const std::move_iterator<_Iter> &'에 대한 템플릿 인수를 추론할 수 없습니다.
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1785,5):
+  또는       'unknown-type std::operator -(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
+  	C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\Player.cpp(40,16):
+  	'unknown-type std::operator -(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)': 'const Player'에서 'const std::reverse_iterator<_BidIt> &'에 대한 템플릿 인수를 추론할 수 없습니다.
+  
+C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\Player.cpp(40,15): error C2512: 'Player::Player': 사용할 수 있는 적절한 기본 생성자가 없습니다.
+  C:\Users\Administrator\source\repos\Battleprogram\Battleprogram\Player.cpp(40,15):
+  인수 목록 '()'을(를) 일치시키는 동안
+  
+  코드를 생성하고 있습니다...

@@ -1,0 +1,265 @@
+int twentyone(int playertotal, int dealertotal, int beting ,int playerstate, int dealerstate);
+void cardlist(int count,int *playerhand, int *dealerhand);
+int headtohead(int playerstate, int dealerstate, int playertotal, int dealertotal,int beting); /*int reset(int playerhand, int dealerhand);*/
+void playgame(int playmoney, int* card);
+
+
+
+
+
+
+
+
+void playgame(int playmoney, int* card)
+{
+    srand(time(NULL));
+    int beting;//판돈
+    int i = 0;//현재 턴을 표현할 변수
+    int j = 0;
+    int playerhand[12] = { 0,0,0,0,0,0,0,0,0,0,0,0 },//플레이어의 카드 목록
+        dealerhand[12] = { 0,0,0,0,0,0,0,0,0,0,0,0 };//딜러의 카드 목록
+    int playerstate = 0;//플레이어의 STAND or HIT
+    int dealerstate = 0;//딜러의 STAND or HIT
+    int HITorSTAND = 0;//더받을지 말지
+    int playertotal = 0, dealertotal = 0;//총합 계산
+    int Aselect; //A의 상태 결정 1 or 11
+
+
+
+
+
+    do {
+
+        printf("베팅금액을 입력하세요.\n");
+        scanf("%d", &beting);
+        playmoney -= beting;
+
+        for (i; i < 2; i++)//최초의 HIT
+        {
+            playerhand[i] += card[(rand(NULL) % 12)];//2장의 카드를 받는다 
+            dealerhand[i] += card[(rand(NULL) % 12)];//2장의 카드를 받는다 
+            playertotal += playerhand[i];//카드의 총합을 계산
+            dealertotal += dealerhand[i];//카드의 총합을 계산
+
+        }
+        printf("플레이어 카드 %d %d %d %d\n\n", playerhand[0], playerhand[1], playerhand[2], playerhand[3]);
+        printf("카드의 총합값 중간 점검%d\n\n", playertotal);
+
+        for (j = 0; j < i; j++) {
+            if (playerhand[j] == A1)//플레이어가 a를 받은경우
+            {
+                printf("A 는 1>> 1 or 2>> 11\n\n");
+                scanf("%d", &Aselect);
+                playerhand[j] = Aselect > A1 ? A2 : A1;//어떻게 쓸래?
+
+                ///* playerhand[j] = A1 < A2 ? playertotal : playertotal + 10;*/
+            }
+        }
+
+        j = 0;
+
+        if (dealerhand[0] == A1 || dealerhand[1] == A1);//딜러가 에이스를 쥔 경우 
+        {
+            if (dealerhand[0] == A1 && dealerhand[0] + dealerhand[1] < 11)//첫째 카드가 에이스고 합계가 11을 초과하지 않는 경우
+            {
+                dealerhand[0] = A2;
+            }
+            else if (dealerhand[1] == A1 && dealerhand[0] + dealerhand[1] < 11)//둘째 카드가 에이스고 합계가 11을 초과하지 않는 경우
+            {
+                dealerhand[1] = A2;
+            }
+
+        }
+
+
+        if (dealertotal >= 17)//초기 딜러의 패가 17이거나 초과하는경우
+        {
+            dealerstate = STAND;//딜러의 상태 스탠드
+        }
+        else
+        {
+            dealerstate = HIT;
+        }
+
+      
+        printf("현재 턴 : %d \n", i);
+
+        cardlist(i, playerhand, dealerhand);
+
+        printf("HIT or STAND\n\n");
+        scanf("%d", &playerstate);//HIT? STAND?
+
+        twentyone(playertotal, dealertotal, beting, playerstate, dealerstate);
+      
+
+
+        while (playerstate == HIT || dealerstate == HIT)//두 플레이어중 하나가 HIT거나 블랙잭이 나오지 않은 경우
+        {
+          
+           
+            twentyone(playertotal, dealertotal, beting, playerstate, dealerstate);//
+            if (playerstate == HIT)//만약 HIT를 선택 할 경우
+
+            {
+                printf("추가 베팅금액을 입력하세요\n\n");
+                scanf("%d", &beting);
+                playmoney -= beting;
+                playerhand[i] += card[(rand(NULL) % 12)];//카드를 1장 더 받는다 
+                playertotal += playerhand[i];//합 
+
+            }
+
+            printf("플레이어 카드 %d %d %d %d\n\n", playerhand[0], playerhand[1], playerhand[2], playerhand[3]);
+
+            for (j = 0; j < i; j++)
+            {
+
+                if (playerhand[j] == A1)//만약 a를 쥐고있는경우
+                {
+                    printf("A 는 1>> 1 or 2>> 11\n\n");
+                    scanf("%d", &Aselect);
+                    //어떻게 쓸래?
+                    playerhand[j] = A1 < Aselect ? playertotal : playertotal + 10;
+                }
+            }
+                 playertotal += playerhand[i];//합산값 어디감
+
+            if (dealertotal < 17)//17보다 모자라면 카드를 1장 더받는다
+            {
+                dealerhand[i] = card[(rand(NULL) % 12)];//딜러의 HIT
+                dealertotal += dealerhand[i];//딜러의 카드 총합  
+            }
+            else//딜러의 패가 17이거나 초과하는경우
+            {
+                dealerstate = STAND;//딜러의 상태 스탠드
+            }
+
+          
+            for (j = 0; j < i; j++)//로직 수정요망
+            {
+                if (dealerhand[j] == A1 )//딜러가 에이스를 쥐고있는 경우 
+                {
+                    if ((dealertotal >= 10) || (dealertotal + 11) == BLACKJACK)//에이스를 쥐고있는데 11로 적용할경우 21이 되는경우 
+                    {
+                        dealerhand[j] = A2;
+                        dealertotal += 10;
+                    }
+                    else if (dealertotal < BLACKJACK)//에이스를 11로 적용했는데 21을 넘긴경우 
+                    {
+                        dealerhand[j] = A1;
+                        dealertotal -= 10;
+                    }
+                }
+            }
+        
+             playmoney+=twentyone(playertotal, dealertotal, beting, playerstate, dealerstate);
+             cardlist(i, playerhand, dealerhand);
+            
+             i++;
+           
+        }
+
+        for (int j = 0; j < i; j++)
+        {
+            dealerhand[j] = 0;
+            playerhand[j] = 0;
+        }
+
+        playertotal = 0, dealertotal = 0;
+        i = 0, j = 0;
+        dealerstate = HIT;
+        playerstate = 0;
+        printf("게임이 종료되었습니다\n\n");
+        printf("현재 가지고있는 판돈 :%d \n", playmoney);
+
+
+    } while (playmoney > 0);
+
+
+    printf("개모대\n");
+}
+
+int twentyone(int playertotal, int dealertotal, int beting, int playerstate,int dealerstate)//승패 계산식  스탠드 상태의 결과도 여기다 넣자 그냥
+{
+    if (playertotal == BLACKJACK && dealertotal == BLACKJACK)//모두 21
+    {
+        printf("블랙잭으로 서로 비겼습니다\n");
+        return beting;
+
+    }
+    else if (playertotal == BLACKJACK)//플레이어만 21
+    {
+        printf("플레이어가 블랙잭으로 승리했습니다\n");
+        return beting * 2;
+    }
+    else if (dealertotal == BLACKJACK)//딜러만 21
+    {
+        printf("딜러가 블랙잭으로 승리했습니다\n");
+        return -beting;
+    }
+    else if (playertotal >= FUMBLE && dealertotal >= FUMBLE)//둘다 22 초과
+    {
+        printf("딜러와 플레이어가 모두 21을 초과하여 무승부가 되었습니다.\n");
+        return beting;
+    }
+    else if (playertotal >= FUMBLE)//플레이어가 22 초과
+    {
+        printf("플레이어가 21을 초과하여 패배하였습니다.\n");
+        return -beting;
+    }
+    else if (dealertotal >= FUMBLE)//딜러가 22 초과
+    {
+        printf("딜러가 21을 초과하여 승리하였습니다.\n");
+        return beting * 2;
+    }
+     else if (dealerstate == STAND && playerstate == STAND)
+    {
+        headtohead(playerstate, dealerstate, playertotal, dealertotal, beting);
+    }
+    else
+    {
+        printf("블랙잭 또는 양측의 스탠드가 나오지않아 계속 진행합니다\n");
+        return 0;
+    }
+}
+
+int headtohead(int playerstate, int dealerstate, int playertotal, int dealertotal, int beting)//만약 두사람이 모두 스탠드 상태일경우 승패지정식
+{
+    if (playerstate == STAND && dealerstate == STAND)
+    {
+        if (playertotal > dealertotal)
+        {
+            printf("플레이어가 승리하여 판돈의 2배를 받습니다 %d", beting * 2);
+            return beting * 2;
+        }
+        else if (playertotal < dealertotal)
+        {
+            printf("딜러가 승리하여 판돈을 잃습니다 %d \n", -beting);
+            return  -beting;
+        }
+        else
+        {
+            return printf("승부가 나지않아 계속 진행합니다\n,");
+        }
+    }
+    else
+        return 0;
+
+}
+
+void cardlist(int count, int * playerhand,int * dealerhand)
+{
+    printf("플레이어의 ");
+    for (int i=0; i <=count; i++) 
+    {
+        printf("%d번째 카드: %d ", i+1, playerhand[i]);
+    }
+    printf("\n");
+
+    /*printf("딜러의 %d번째 카드 %d ",1,dealerhand[0]);*/
+    for (int i = 0; i <= count; i++)
+    {
+        printf("딜러의 %d번째 카드: %d ", i+1 , dealerhand[i]);
+    }
+    printf("\n");
+}

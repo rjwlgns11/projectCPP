@@ -1,0 +1,169 @@
+/#include "Header.h"
+////함수와 매개변수
+////매개변수는 함수의 ()부분에 작성되는 변수이며
+////함수를 호출할때 호출하는 쪽에서 넣어줄 데이터에 대한 표현임
+//
+////함수를 "호출하는 쪽"에서 넣어주는 데이터는 인자라고 부른다
+//
+//void funtion(char name[]);//함수에 char형 배열 전달
+//
+//void funtion2(float value);//C에서는 이름을 다르게 설계해야함
+//int main()
+//{
+//
+//	funtion("C programing");
+//	char data[] = "C++";
+//    funtion(data);//
+//	const char* data2 = "Python";
+//	funtion(data2);
+//	//맞지않는 데이터를 넣을 경우 오류가 생길수있음
+//
+//	return 0;
+//}
+//void funtion(char name[])
+//{
+//	printf("이름 : %s \n", name);
+//}
+//
+//void funtion2(float value)
+//{
+//	printf("%.2f", value);
+//}
+==========================
+//#include "Header.h"
+//
+////프로그램 내에서 사용할수있는 변수의 종류
+//
+//int a = 0;//전역변수 global varialble
+//
+////프로그램 전체에서 사용이 가능한 변수를 의미함
+////프로그램이 종료되야 메모리에서 삭제됨
+//
+//static int b;//정적변수
+////선언만 해두면 0으로 초기화 된다
+////만들고 난 이후부터 프로그램 종료 전까지는 유지된다.
+////선언후 함수가 종료되어도 메모리에서 사라지지않는 변수
+//
+//void StaticExample();
+//void LocalExample();
+//void GlobalExample();
+//void LocalExample2();
+//
+//
+//
+//int main()
+//{
+//	GlobalExample();
+//
+//	printf("Global = %d\n",a);//전역변수에대한 출력
+//	StaticExample();
+//	printf("static = %d\n",b);//static 전역변수에 대한 출력
+//	LocalExample();//지역변수 c에 대한 출력
+//	int c = 5;
+//	LocalExample2();
+//	printf("Local = %d\n", c);//main에서 정의한 c에 대한 출력
+//
+//
+//	return 0;
+//}
+//
+//void StaticExample()
+//{
+//	b += 5;
+//}
+//
+//void LocalExample()
+//{
+//	int c = 0;//Local variable = 지역변수 
+//	//함수 내부에서 만들어지는 이 변수는 해당영역(함수)를 벗어날경우 데이터에서 삭제되는 특징을 가지고있음
+//	c += 5;
+//	printf("Local = %d \n", c);
+//}
+//
+//void GlobalExample()
+//{
+//	a += 5;
+//
+//}
+//
+//void LocalExample2()
+//{
+//	int c = 0;
+//	c += 5;
+//}
+
+===========================
+
+//#include "Header.h"
+//
+////싕나는 문제시간~
+//
+//void startnumber(int number);//1번부터 
+//int sumvalues(int number1, int number2);
+//void oddnumber(int number);
+//
+//int main()
+//{
+//	int n=0;
+//	/*printf("정수 입력 :");
+//	scanf("%d", &n);
+//	startnumber(n);*/
+//	int a;
+//
+//	printf("두개의 정수 입력 :");
+//	scanf("%d %d", &n,&a);
+//	printf("%d\n",sumvalues(n, a));
+//
+//	printf("정수 입력 :");
+//	scanf("%d", &n);
+//	oddnumber(n);
+//
+//	return 0;
+//}
+//
+//void startnumber(int number)
+//{
+//	for (int i = 0; i < 10; i++)
+//	{
+//		printf("%d \n", number++);
+//	}
+//}
+//
+//int sumvalues(int number1, int number2)
+//{
+//	if (number1 < number2)
+//	{
+//		int i, temp = 0;
+//		for (i = number1+1; i < number2; i++)
+//		{
+//			temp += i;
+//		}
+//		return temp;
+//	}
+//
+//	else if (number1 > number2)
+//	{
+//		int i, temp = 0;
+//		for (i = number2 + 1; i < number1; i++)
+//		{
+//			temp += i;
+//		}
+//		return temp;
+//	}
+//	else
+//		printf("두수가 동등합니다\n");
+//}
+//
+//void oddnumber(int number)
+//{
+//	if (number % 2 == 0)
+//	{
+//		printf("짝수입니다\n");
+//	}
+//	else
+//		printf("홀수입니다\n");
+//	//number %2 == 1 ? printf("홀수입니다") : printf("짝수입니다") //삼항연산자
+//  }
+//
+//
+============================

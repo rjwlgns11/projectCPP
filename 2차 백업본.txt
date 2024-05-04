@@ -1,0 +1,424 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include "Header.h"
+
+
+//간단히 만들어보는 블랙잭 게임 
+// 블랙잭 : 21
+// 게임의 룰 
+// 승리조건: 카드의 합이 21점 또는 21점에 근접한값을 가진사람이 이기는 게임
+// 기본 규칙
+// 딜러의 첫번째 카드를 제외한 모든 카드는 공개 상태가 된다
+// 게임을 시작하면 플레이어는 각 2장의 카드를 받는다.(딜러 포함)
+//플레이어의 경우에는 모든 카드를 공개한다
+//플레이어의 처음패가 '블랙잭'일경우 배팅금액을 2배 받게 된다
+/*딜러의 처음 2장의 패가 블랙잭 일경우 배팅금액의 2배를 잃게된다
+* 딜러와 플레이어가 모두 블랙잭일경우 무승부 처리
+*/
+
+//딜러와 플레이어의 게임 플레이
+//플레이어는 카드를 더 뽑거나 멈출수있다 (drow(hit), stand)
+
+//딜러는 플레이어가 카드를 뽑은후 카드 추가 여부를 결정한다
+//현재 본인의 패가 17이상인경우 stand 진행
+//현재 본인의 패가 17미만일경우 hit 진행
+
+//[펌블]: 패가 21초과일경우 0점으로 처리합니다 (패배)
+//판돈이 0원인경우 강제 패배된다.
+//계산을 진행할때 j,q,k의 경우는 10으로 계산한다
+//a의 경우는 1또는 11을 고를수있다
+
+//매크로 변수 = 값의 대입도 뭣도 불가능함 이용만 가능 변수에 대입은 가능할듯?
+
+#define blackjack 21
+#define A1 1
+#define A2 11
+#define J 10
+#define Q 10
+#define K 10
+#define WIN 0//무슨의도로 0으로 선언했을까?
+#define LOSE 1
+#define DROW 2
+#define HIT 1
+#define STAND 2
+#define STOP 5
+
+
+#define BLACKJACK 21
+#define FUMBLE 22
+
+//void print(int playercard[], int dealercard[],int count, int beting,int playmoney);
+//int selectmenu(int card[], int playercard[], int dealercard[], int playmoney, int beting, int playertotal, int dealertotal); 
+void playgame(int playmoney, int card[]);
+int check(int playtotal, int dealertotal, int turn, int playercard[], int dealercard[],int beting);
+int check21(int playertotal, int dealertotal, int beting);
+int main()
+{
+    int select;
+    int card[] = { A1,2,3,4,5,6,7,8,9,10,J,Q,K };
+    static int playmoney;
+
+    srand(time(NULL));
+
+    printf("┌────────────┐\n");
+    printf("│ BLACK JACK │\n");
+    printf("│ 1. PLAY    │\n");
+    printf("│ 2. COUNT   │\n");
+    printf("│ 3. EXIT    │\n");
+    printf("└────────────┘\n");
+    printf("☞   ");
+    scanf("%d", &select);
+
+    switch (select)
+    {
+
+    case 1:
+
+
+        printf("게임을 시작합니다\n");
+
+        printf("본인의 실탄을 장전하세요\n");
+        scanf("%d", &playmoney);
+        
+            playgame(playmoney, card);
+        
+        break;
+    case 2:
+
+        break;
+    case 3:
+        printf("게임을 종료합니다 \n");
+        exit(0);
+    }
+
+    return 0;
+}
+
+
+void playgame(int playmoney, int card[])
+{
+    int playercard[13] = { 0,0,0,0,0,0,0,0,0,0,0,0 };
+    int dealercard[13] = { 0,0,0,0,0,0,0,0,0,0,0,0 };
+    int turn = 0;
+    int playertotal = 0, dealertotal = 0;
+    int beting = 0;
+    int playerstate = 0, dealerstate = 0;
+    int selectmenu = 1;
+    int playcount = 0;
+   
+    int shobu = 0;
+    
+    
+        printf("새 게임 %d\n\n", playcount);
+        playcount++;
+        printf("초기 베팅액을 입력해 주십시오");
+        scanf("%d", &beting);
+        playmoney -= beting;
+        printf("플레이어의 잔액 : %d \n\n", playmoney);
+
+        if (dealertotal > 17)
+        {
+            printf("딜러 카드값이 17을 초과하여 자동으로 STAND상태가 됩니다\n\n");
+            dealerstate = STAND;
+        }
+        else
+        {
+            dealerstate = HIT;
+        }
+
+        for (turn; turn < 2; turn++)//초기 패 2장 돌림
+        {
+            playercard[turn] += card[rand(time(NULL)) % 12];
+            dealercard[turn] += card[rand(time(NULL)) % 12];
+            playertotal += playercard[turn];
+            dealertotal += dealercard[turn];
+        }
+        turn = 1;
+
+        playmoney += check21(playertotal, dealertotal, beting);//21체크 /승부가 날경우 다음 반복문은 필요없다
+
+        /* while(selectmenu(card, playercard, dealercard, playmoney, beting, playertotal, dealertotal) != 0)
+         {
+
+                 turn++;
+                 selectmenu(card, playercard, dealercard, playmoney, beting, playertotal, dealertotal);
+
+                 if (selectmenu(card, playercard, dealercard, playmoney, beting, playertotal, dealertotal==0))
+                 {
+                     break;
+                 }
+
+         }*/
+
+
+        while (selectmenu == 1 || selectmenu == 2)
+        {
+            
+            printf("1. 카드 확인, 2. HITorSTAND 3. 승부 \n\n");//메뉴 선택
+            scanf("%d", &selectmenu);
+
+            switch (selectmenu)
+            {
+            case 1:
+            {
+                turn++;
+                for (int i = 0; i < turn; i++) {//카드 보기
+                    printf("플레이어 카드%d. %d\n\n", i + 1, playercard[i]);
+
+                }
+                printf("딜러 카드 %d. %d \n\n", 1, dealercard[0]);
+                break;
+            }
+            case 2:
+            {
+                printf("1.HIT or 2.STAND\n\n");//카드받기
+                scanf("%d", &playerstate);
+
+                if (playerstate == STAND)
+                {
+                    printf("플레이어가  STAND를 선택했습니다\n\n");
+
+                }
+                else
+                {
+                    printf("베팅하십시오 \n\n");
+                    scanf("%d", &beting);
+                    playmoney -= beting;
+                    printf("플레이어의 총 베팅액 : %d", beting);
+                    printf("플레이어가 HIT하였습니다.\n\n");
+                    playercard[turn] += card[rand(time(NULL)) % 12];
+                    playertotal += playercard[turn];
+                   
+                }
+
+                if (dealerstate == HIT)
+                {
+                    printf("딜러가 HIT하였습니다.\n\n");
+                    dealercard[turn] += card[rand(time(NULL)) % 12];
+                    dealertotal += dealercard[turn];
+
+                    if (dealertotal >= 17)
+                    {
+                        dealerstate = STAND;
+                    }
+                }
+                else
+                {
+                    printf("딜러가 STAND상태입니다.\n\n");
+                }
+                
+                playmoney += check21(playertotal, dealertotal, beting);
+
+            case 3:
+
+                playmoney += check(playertotal, dealertotal, turn, playercard, dealercard, beting);
+
+
+            }
+
+            }
+
+            /* return 0;*/
+        }
+    
+}
+//int selectmenu(int card[], int playercard[], int dealercard[], int playmoney, int beting, int playertotal, int dealertotal)
+//{
+//    int selectmenu = 1;
+//    int playerstate = 0, dealerstate = 0;
+//    int turn = 2;
+//    int shobu = 0;
+//
+//
+//    if (dealertotal > 17)
+//    {
+//        printf("딜러 카드값이 17을 초과하여 자동으로 STAND상태가 됩니다\n\n");
+//        dealerstate = STAND;
+//    }
+//    else
+//    {
+//        dealerstate = HIT;
+//    }
+//
+//
+//    while (selectmenu==1 || selectmenu == 2)
+//    {
+//
+//        printf("1. 카드 확인, 2. HITorSTAND 3. 승부 \n\n");//메뉴 선택
+//        scanf("%d", &selectmenu);
+//
+//        switch (selectmenu)
+//        {
+//        case 1:
+//        {
+//            for (int i = 0; i < turn; i++) {//카드 보기
+//                printf("플레이어 카드%d. %d\n\n", i + 1, playercard[i]);
+//
+//            }
+//            printf("딜러 카드 %d. %d \n\n", 1, dealercard[0]);
+//            break;
+//        }
+//        case 2:
+//        {
+//            printf("1.HIT or 2.STAND\n\n");//카드받기
+//            scanf("%d", &playerstate);
+//
+//            if (playerstate == STAND)
+//            {
+//                printf("플레이어가  STAND를 선택했습니다\n\n");
+//
+//            }
+//            else
+//            {
+//                printf("베팅하십시오 \n\n");
+//                scanf("%d", &beting);
+//                playmoney -= beting;
+//                printf("플레이어의 총 베팅액 : %d", beting);
+//                printf("플레이어가 HIT하였습니다.\n\n");
+//                playercard[turn] += card[rand(time(NULL)) % 12];
+//                playertotal += playercard[turn];
+//            }
+//
+//            if (dealerstate == HIT)
+//            {
+//                printf("딜러가 HIT하였습니다.\n\n");
+//                dealercard[turn] += card[rand(time(NULL)) % 12];
+//                dealertotal += dealercard[turn];
+//
+//                if (dealertotal >= 17)
+//                {
+//                    dealerstate = STAND;
+//                }
+//            }
+//            else
+//            {
+//                printf("딜러가 STAND상태입니다.\n\n");
+//            }
+//            playmoney += check21(playertotal, dealertotal, beting);
+//
+//        case 3:
+//            
+//            playmoney += check(playertotal, dealertotal, playmoney, beting, playerstate, dealerstate);
+//            return 0;
+//           
+//        }
+//        
+//        }
+//
+//       /* return 0;*/
+//    }
+//}
+
+int check(int playertotal, int dealertotal, int count,int playercard[], int dealercard[],int beting)
+{
+    int i = 0;
+    printf("승부하시겠습니까? 1. 승부 2.한 턴 더! \n\n");
+    scanf("%d", &i);
+
+    switch (i){
+
+      case 1: 
+
+          if (playertotal == dealertotal)
+          {
+             
+              printf("플레이어와 딜러의 카드값이 동률이므로 무승부처리됩니다\n\n");
+
+              printf("플레이어의 ");
+              for (int i = 0; i < count; i++)
+              {
+                  printf("%d번째 카드 %d \n", i, playercard[i]);
+              }
+              printf("딜러의");
+              for (int i = 0; i < count; i++)
+              {
+                  printf("%d번째 카드 %d \n", i, dealercard[i]);
+              }
+             
+              return beting * 2;
+          }
+          else if (playertotal > dealertotal)
+          {
+              printf("플레이어의 ");
+              for (int i = 0; i < count; i++)
+              {
+                  printf("%d번째 카드 %d \n", i, playercard[i]);
+              }
+              printf("딜러의");
+              for (int i = 0; i < count; i++)
+              {
+                  printf("%d번째 카드 %d \n", i, dealercard[i]);
+              }
+              
+              printf("플레이어가 딜러를 이겼습니다!\n\n");
+              return beting*2;
+          }
+          else if (playertotal < dealertotal)
+          {
+              printf("플레이어의 ");
+              for (int i = 0; i < count; i++)
+              {
+                  printf("%d번째 카드 %d \n", i, playercard[i]);
+              }
+              printf("딜러의");
+              for (int i = 0; i < count; i++)
+              {
+                  printf("%d번째 카드 %d \n", i, dealercard[i]);
+              }
+            
+              printf("딜러가 플레이어를 이겼습니다!\n\n");
+              return -beting*2;
+          }
+      default:
+          printf("다음 페이즈로 넘어갑니다.\n\n");
+          return 0;
+          
+    }
+
+   
+}
+
+int check21(int playertotal, int dealertotal,int beting)
+{
+    if (playertotal == BLACKJACK && dealertotal == BLACKJACK)
+    {
+        printf("플레이어와 딜러의 카드값이 블랙잭이므로 무승부처리됩니다\n\n");
+        return beting;
+    }
+    else if (playertotal == BLACKJACK)
+    {
+        printf("플레이어가 블랙잭으로 승리하였습니다\n\n");
+        return beting*2;
+    }
+    else if (dealertotal == BLACKJACK)
+    {
+        printf("딜러가 블랙잭으로 승리하였습니다\n\n");
+        return -beting * 2;
+    }
+    else if (playertotal == FUMBLE && dealertotal == FUMBLE)
+    {
+        printf("플레이어와 딜러의 카드값이 펌블이므로 무승부처리됩니다\n\n");
+        return beting;
+    }
+    else if (playertotal == FUMBLE)
+    {
+        printf("플레이어가 21을 초과하여 패배하였습니다\n\n");
+        return -beting;
+    }
+    
+}
+//void print(int playercard[], int dealercard[],int count,int beting,int playmoney)
+//{
+//    printf("플레이어의 ");
+//    for (int i = 0; i < count; i++)
+//    {
+//        printf("%d번째 카드 %d \n", i, playercard[i]);
+//    }
+//    printf("딜러의");
+//    for (int i = 0; i < count; i++)
+//    {
+//        printf("%d번째 카드 %d \n", i, dealercard[i]);
+//    }
+//    printf("플레이어의 판돈 %d\n\n",playmoney);
+//}
+//현재 플레이어의 보유 금액
+//플레이어의 전적 승패무

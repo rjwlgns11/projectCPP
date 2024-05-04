@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+
+int main()
+{
+	
+	int year,month,day;
+	scanf("%d.%d.%d",&year,&month,&day);//.%d사이에 .을 붙이면 .을 포함해 한번에 입력할수있다
+	printf("%02d-%02d-%04d\n",day,month,year);//역출력
+	
+	return 0;
+	
+	
+}

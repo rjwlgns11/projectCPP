@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int main()
+{
+	char a[100];
+	scanf("%s", a);
+
+	for (int n = 0; a[n] != '\0'; n++)//비교 연산이 안먹힘,논리 낫연산 실행해야함
+	{
+		printf("\'%c\'\n",a[n]);// 이거 콤마 출력할때 슬래시 아님 역슬래시임!!!!!!!!!!!!!!
+	}
+
+	return 0; 
+}
+
+ 비교연산이 안먹히는 이유는?
+널문자는 애초에 숫자가 아닌 아스키 코드값을 의미하기때문

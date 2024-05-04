@@ -1,0 +1,30 @@
+반복문 문제
+구구단 입력하기
+
+printf("단을 입력하세요\n");
+scanf("%d"&dan);
+
+For문식 해결(인자(피연산자)는 한줄에 모두 정리한다)
+
+ for(a; a<10; a++)(피연산자, break조건, 피연산자 증감)
+{
+    printf("%d x %d=%d\n",dan,a,dan*a);
+}
+
+while문 해결(break 조건을 입력하고 반복할것 입력후 마지막에 피연산자 증감을 실시한다(조건만 맞으면 연산을 안할수도 있음))
+
+while(a<10){(break조건)
+
+       printf("%d x %d=%d\n",dan,a,dan*a);
+       a++(피연산자 증감)
+}
+
+
+
+do while문 해결("우선 한번 반복하고" break 조건 결과를 확인한다)
+
+do{
+
+       printf("%d x %d=%d\n",dan,a,dan*a);
+       a++(조건식 증가)
+}while(a<10)(braek조건)

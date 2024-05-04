@@ -1,0 +1,31 @@
+
+
+
+
+
+(void*)buffer= (void*)형 포인터 인자 (여기에 무엇이 오든 크게 상관없음) (무엇이든 가리킬수있지만 값의 입출력 불가) 
+size_t = 데이터의 크기
+size_t count = 데이터의 크기 지정
+FILE * stream = 파일 스트림. 말 그대로 파일 스트림을 지정한 상태에서 인자로 전달한다 
+
+while (1)
+	{
+		aa = fread((void*)buffer, size_t, size_t count, FILE * stream);//aa는 fread(데이터 size_t의 크기를 size_t count의 크기 만큼 (void*)buffer에서 읽어서 FILE * stream에 저장해라) 성공시 전달인자 size_t count가 반환(바이너리 파일 읽기 파일 스트림)
+		
+		if (aa < sizeof(count))//4<1인데 실행이 안되면 이상이 생긴것 feof 함수를 이용 원인을 알아보기
+		{
+			
+			if (feof (FILE * stream) != 0)//읽기 전용 모드 값이 0에 도달했을면 0이 아닌값 반환 (FILE * stream 값을 검사) 
+			{
+				fwrite((void*)buffer, size_t, size_t count, FILE * stream);//FILE * stream에 size_t의 크기의 데이터를 size_t count의 크기만큼 (void*)buffer로부터 읽어서 저장 (바이너리 파일 쓰기 파일 스트림)
+					puts("파일 복사 성공");
+					break;
+			}
+			else
+			{
+				puts("파일 복사 실패");
+					break;
+			}
+
+		}
+바이너리 파일 쓰기 파일 스트림 fwrite((void*)buffer, size_t, size_t count, FILE * stream);//FILE * stream에 size_t 의 데이터를 size_t count의 크기만큼 (void*)buffer에 저장된 값을 쓴다(복사).

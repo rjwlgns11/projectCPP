@@ -1,0 +1,33 @@
+"Header.h"
+#pragma once
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+#include "Header.h"
+
+int main()
+{
+	int coin;
+	printf("음료수를 선택하세요\n");
+	scanf("%d", &coin);
+	switch (coin)
+	{
+	case 1:
+		printf("1.사이다\n");
+		break;
+	case 2:
+		printf("2.콜라\n");
+		break;
+    case 3:
+		printf("3.포카리\n");
+		break;
+	case 4:
+		printf("4.게토레이\n");
+		break;
+		
+	default :
+		printf("정확한 입력이 아닙니다\n");
+
+	} 
+	return 0;
+}

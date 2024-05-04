@@ -1,0 +1,36 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int h, m;
+	printf("시간을 입력하세요\n");
+	scanf("%d %d", &h, &m);
+	
+	if (m<45&&h<=0) {//0시 45분 이하 일경우 
+		h = 23;
+		m += 15;
+		printf("실제 알람 설정시간 %d:%d\n", h, m);
+	}
+	else if (m>=45&&h<=0) {//0시 45분 이상 일 경우
+		m -= 45;
+		h -= 1;
+		printf("실제 알람 설정시간 %d:%d\n", h, m);
+	}
+	else if(m>=45){//임의의 시 45분 이하일경우
+		m -= 45;
+		h += 1;
+		printf("실제 알람 설정시간 %d:%d\n", h, m);
+
+	}
+	else if (m < 45){//임의의 시 45분 이상일경우
+		m += 15;
+		h -= 1;
+		printf("실제 알람 설정시간 %d:%d\n", h, m);
+	}
+	else{
+		printf("정확한 값이 아닙니다\n");
+	}
+
+	return 0;
+}

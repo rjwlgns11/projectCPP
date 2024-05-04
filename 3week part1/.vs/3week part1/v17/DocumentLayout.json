@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\3week part1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16EB1FF2-0364-4F8D-9BB3-47071EF889EC}|3week part1\\3week part1.vcxproj|C:\\Users\\Administrator\\source\\repos\\3week part1\\3week part1\\traing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{16EB1FF2-0364-4F8D-9BB3-47071EF889EC}|3week part1\\3week part1.vcxproj|solutionrelative:3week part1\\traing.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16EB1FF2-0364-4F8D-9BB3-47071EF889EC}|3week part1\\3week part1.vcxproj|C:\\Users\\Administrator\\source\\repos\\3week part1\\3week part1\\sourse.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{16EB1FF2-0364-4F8D-9BB3-47071EF889EC}|3week part1\\3week part1.vcxproj|solutionrelative:3week part1\\sourse.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "traing.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\3week part1\\3week part1\\traing.cpp",
+              "RelativeDocumentMoniker": "3week part1\\traing.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\3week part1\\3week part1\\traing.cpp",
+              "RelativeToolTip": "3week part1\\traing.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-30T04:40:40.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sourse.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\3week part1\\3week part1\\sourse.cpp",
+              "RelativeDocumentMoniker": "3week part1\\sourse.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\3week part1\\3week part1\\sourse.cpp",
+              "RelativeToolTip": "3week part1\\sourse.cpp",
+              "ViewState": "AQIAABYAAAAAAAAAAAAiwCMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-30T04:25:44.013Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

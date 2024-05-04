@@ -1,0 +1,31 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int level=31, power=1000, money=9000;
+	if (level <= 20)
+	{
+		printf("던전 1층에 입장하셨습니다\n");
+	}
+	else{
+	    printf("레벨이 너무 높아 입장이 불가합니다\n");
+    }
+
+	if (power <= 1000)
+	{
+		printf("던전 2층에 입장하셨습니다\n");
+	}
+	else {
+		printf("전투력이 너무 높아 입장이 불가합니다\n");
+	}
+
+	if (level > 30 && money-10000>=1)
+	{
+		printf("던전 3층에 입장하셨습니다\n");
+	}
+	else {
+		printf("레벨이 너무 낮거나 소지금이 부족하여 입장이 불가합니다\n");
+	}
+	return 0;
+}

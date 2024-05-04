@@ -1,0 +1,361 @@
+﻿  kiosk.c
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(6,30): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(6,30):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(7,16): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(7,16):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(8,16): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(8,16):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(9,16): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(9,16):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(10,16): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(10,16):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(11,17): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(11,17):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(12,16): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(12,16):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(13,19): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(13,19):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(14,16): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(14,16):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(15,27): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\welcome.h(15,27):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(6,26): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(6,26):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(7,17): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(7,17):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(8,22): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(8,22):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(18,57): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(18,57):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(24,51): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(24,51):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(29,53): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\StoreorTakeout.h(29,53):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(9,48): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(9,48):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(14,38): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(14,38):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(15,35): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(15,35):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(16,38): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(16,38):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(17,39): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(17,39):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(18,41): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(18,41):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(45,15): warning C4013: 'menuchoice'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(47,105): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(47,105):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(54,95): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(54,95):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(84,102): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(84,102):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(91,93): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(91,93):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(122,105): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(122,105):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(129,95): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(129,95):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(161,100): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(161,100):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(170,100): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(170,100):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(181,100): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(181,100):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(211,100): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(211,100):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(220,100): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(220,100):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(231,100): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(231,100):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\menu.h(255,11): warning C4013: 'additionalorderfuntion'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(7,55): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(7,55):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(14,43): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(14,43):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(15,33): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(15,33):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(16,36): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(16,36):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(17,33): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(17,33):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(18,37): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(18,37):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(32,69): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(32,69):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(44,63): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(44,63):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(56,66): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(56,66):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(68,63): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(68,63):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(76,62): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(76,62):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(82,52): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\sidemenu.h(82,52):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\PleaseWaitForAMoment.h(7,65): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\PleaseWaitForAMoment.h(7,65):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(27,41): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(27,41):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(35,54): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(35,54):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(43,55): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(43,55):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(52,50): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\Payment.h(52,50):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\additional order.h(9,85): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\additional order.h(9,85):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(7,54): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(7,54):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(12,38): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(12,38):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(13,35): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(13,35):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(14,38): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(14,38):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(15,39): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(15,39):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(16,41): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(16,41):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(49,15): warning C4013: 'menuremover'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(51,106): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(51,106):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(64,95): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(64,95):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(100,77): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(100,77):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(112,67): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(112,67):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(148,80): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(148,80):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(160,69): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(160,69):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(197,75): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(197,75):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(211,75): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(211,75):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(227,75): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(227,75):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(262,75): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(262,75):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(276,75): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(276,75):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 3개가 제공되었습니다.
+  
+C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(292,75): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  (소스 파일 'kiosk.c'을(를) 컴파일하는 중)
+  C:\Users\Administrator\source\repos\project kiosk\project kiosk\RemoveSelectMenu.h(292,75):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 2개가 제공되었습니다.
+  
+  project kiosk.vcxproj -> C:\Users\Administrator\source\repos\project kiosk\x64\Debug\project kiosk.exe

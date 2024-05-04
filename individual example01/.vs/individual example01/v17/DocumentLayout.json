@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\individual example01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{906C12FD-787C-447E-B446-2D7153976BD8}|individual example01\\individual example01.vcxproj|C:\\Users\\Administrator\\Downloads\\Practice10.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{906C12FD-787C-447E-B446-2D7153976BD8}|individual example01\\individual example01.vcxproj|C:\\Users\\Administrator\\source\\repos\\individual example01\\individual example01\\individual practice01.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{906C12FD-787C-447E-B446-2D7153976BD8}|individual example01\\individual example01.vcxproj|solutionrelative:individual example01\\individual practice01.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Practice10.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\Practice10.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Practice10.c",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\Practice10.c",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Practice10.c",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-02-24T03:57:32.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "individual practice01.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\individual example01\\individual example01\\individual practice01.c",
+              "RelativeDocumentMoniker": "individual example01\\individual practice01.c",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\individual example01\\individual example01\\individual practice01.c",
+              "RelativeToolTip": "individual example01\\individual practice01.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-02-06T20:15:06.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
